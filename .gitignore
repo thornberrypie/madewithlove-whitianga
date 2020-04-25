@@ -1,0 +1,7 @@
+.DS_Store
+_access.txt
+_Reference/fwdwebsitehomepage
+_Reference/stockistofimages
+wp-config.php
+node_modules
+wp/wp-content/themes/madewithlove/dist

@@ -15,6 +15,6 @@
 <div class="mw-wrapper"><?php // div closes in footer.php ?>
   <div class="mw-container">
     <header class="mw-header">
-      <?php if($post) echo MWL_get_featured_image($post->ID) ?>
+      <img src="/wp-content/themes/madewithlove/images/made-with-love-logo-large.jpg" alt="made with love gifts wellness eco friendly flowers" />
     </header>
   </div>

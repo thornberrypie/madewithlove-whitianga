@@ -17,8 +17,8 @@ function supplier_posttype() {
   $labels = array(
     'name'            => _x( 'suppliers', 'plural' ),
     'singular_name'   => _x( 'supplier', 'singular' ),
-    'menu_name'       => _x( 'suppliers', 'admin menu' ),
-    'name_admin_bar'  => _x( 'suppliers', 'admin bar' ),
+    'menu_name'       => _x( 'Suppliers', 'admin menu' ),
+    'name_admin_bar'  => _x( 'Suppliers', 'admin bar' ),
     'add_new'         => _x( 'Add New', 'add new' ),
     'add_new_item'    => __( 'Add New supplier' ),
     'new_item'        => __( 'New supplier' ),

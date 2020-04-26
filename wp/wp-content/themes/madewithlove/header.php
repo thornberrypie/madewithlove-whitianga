@@ -15,6 +15,6 @@
 <div class="mw-wrapper"><?php // div closes in footer.php ?>
   <div class="mw-container">
     <header class="mw-header">
-      <?php echo MWL_get_featured_image($post->ID) ?>
+      <?php if($post) echo MWL_get_featured_image($post->ID) ?>
     </header>
   </div>

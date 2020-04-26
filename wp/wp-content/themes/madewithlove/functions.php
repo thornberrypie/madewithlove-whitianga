@@ -9,4 +9,4 @@ require_once 'includes/helpers.php';
 require_once 'includes/theme.php';
 
 // Post types
-require_once 'includes/post-types/product.php';
+require_once 'includes/post-types/supplier.php';

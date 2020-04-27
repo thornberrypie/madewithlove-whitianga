@@ -15,12 +15,12 @@ function supplier_posttype() {
   );
 
   $labels = array(
-    'name'            => _x( 'suppliers', 'plural' ),
-    'singular_name'   => _x( 'supplier', 'singular' ),
+    'name'            => _x( 'Suppliers', 'plural' ),
+    'singular_name'   => _x( 'Supplier', 'singular' ),
     'menu_name'       => _x( 'Suppliers', 'admin menu' ),
     'name_admin_bar'  => _x( 'Suppliers', 'admin bar' ),
-    'add_new'         => _x( 'Add New', 'add new' ),
-    'add_new_item'    => __( 'Add New supplier' ),
+    'add_new'         => _x( 'Add new', 'add new' ),
+    'add_new_item'    => __( 'Add new supplier' ),
     'new_item'        => __( 'New supplier' ),
     'edit_item'       => __( 'Edit suppliers' ),
     'view_item'       => __( 'View suppliers' ),

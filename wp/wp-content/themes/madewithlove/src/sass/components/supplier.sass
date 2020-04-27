@@ -1,0 +1,28 @@
+.mwl-content-supplier
+  padding-bottom: 0
+
+  @include bp(sm)
+    display: flex
+
+
+  .mwl-content-image
+    margin-bottom: $space/2
+
+    @include bp(sm)
+      margin: 0 $space 0 0
+      max-width: 50%
+
+  .mwl-content-main
+    margin-top: $space/2
+    width: 100% 
+
+    @include bp(sm)
+      margin-top: $space/4
+      text-align: left
+
+    @include bp(md)
+      margin-top: $space/2
+
+  .mwl-content-title
+    font-family: $font-heading
+    margin-bottom: $space/2

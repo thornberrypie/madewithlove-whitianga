@@ -1,4 +1,11 @@
 <?php
+function mwl_content_image() {
+  $img = mwl_get_image('product_image', 'large');
+  return $img ?
+    '<div class="mwl-content-image">'.$img.'</div>'
+    : '';
+}
+
 function mwl_featured_image($id) {
   if(has_post_thumbnail($id)) {
       $image_array = wp_get_attachment_image_src(

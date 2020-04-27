@@ -17,6 +17,8 @@
 <div class="mwl-wrapper"><?php // div closes in footer.php ?>
   <div class="mwl-container">
     <header class="mwl-header">
-      <img src="/wp-content/themes/madewithlove/images/made-with-love-logo-large.jpg" alt="made with love gifts wellness eco friendly flowers" />
+      <a href="/">
+        <img src="/wp-content/themes/madewithlove/images/made-with-love-logo-large.jpg" alt="made with love gifts wellness eco friendly flowers" />
+      </a>
     </header>
   </div>

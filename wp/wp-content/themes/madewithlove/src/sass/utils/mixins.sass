@@ -16,3 +16,6 @@
 
   @else 
     @warn "Breakpoint mixin supports:  xs, sm, md, lg and xl"
+
+@mixin transition($property: all, $speed: 0.3s, $function: ease)
+  transition: $property $speed $function

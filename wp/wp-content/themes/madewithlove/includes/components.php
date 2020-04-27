@@ -40,14 +40,20 @@ function mwl_suppliers() {
       $query->the_post();
       $id = get_the_ID();
       $img_url = mwl_get_image_url('product_image');
+      $img_style = $img_url ? ' style="background-image:url('.$img_url.')"' : '';
       
       $s .= '<a class="mwl-supplier" href="'.get_permalink().'">';
-      $s .= $img_url ? '<div class="mwl-supplier-image" style="background-image:url('.$img_url.')"></div>' : '';
+      $s .= '<div class="mwl-supplier-image"'.$img_style.'></div>';
       $s .= '<h4 class="mwl-supplier-name">'.get_the_title().'</h4>';
       $s .= '</a>';
   }
 
   wp_reset_query();
 
-  return $s !== '' ? '<div class="mwl-suppliers-grid">'.$s.'</div>' : '';
+  return $s !== '' ? '
+  <div class="mwl-suppliers-grid">
+    <h3 class="mwl-suppliers-title">Stockist of</h3>
+    '.$s.'
+  </div>
+  ' : '';
 }

@@ -16,12 +16,20 @@
   padding: $space
 
   &-main
-    margin: $space/2 auto 0
-    max-width: 40em
+    margin: $space auto
+    max-width: 54em
 
     @include bp(md)
-      margin-top: $space
+      margin-top: $space*1.5
 
     h2
-      font-size: 1.25rem
+      font-size: 1.2rem
       line-height: 1.2
+      padding: 0 $space
+
+      @include bp(sm)
+        font-size: 1.6rem
+      
+      @include bp(lg)
+        font-size: 1.9rem
+        

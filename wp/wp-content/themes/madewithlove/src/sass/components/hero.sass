@@ -12,11 +12,15 @@
     text-transform: uppercase
     width: 100%
 
-    @include bp(sm)
+    @include bp(xs)
       font-size: 1.3rem
 
+    @include bp(md)
+      font-size: 1.9rem
+
     @include bp(lg)
-      font-size: 1.5rem
+      bottom: 10px
+      font-size: 2.4rem
 
     &:before
       background-color: $color-white

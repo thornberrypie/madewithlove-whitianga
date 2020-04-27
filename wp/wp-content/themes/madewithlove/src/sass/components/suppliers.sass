@@ -1,27 +1,58 @@
 .mwl-suppliers
-  &-title
-    font-family: $font-heading
+  margin-top: $space
 
   &-grid
-    display: flex
+    margin: 0 auto
+    max-width: 86em
+
+    @include bp(sm)
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+
+  &-title
+    font-family: $font-heading
+    font-size: 1.6rem
+    padding: $space 0 $space/2
+    text-align: center
+    text-transform: uppercase
     width: 100%
 
+    @include bp(sm)
+      font-size: 1.9rem
+      padding: $space 10px 10px
+      text-align: left
+
 .mwl-supplier
+  @include transition
   border: 1px solid $color-grey
   color: $color-black
-  display: block
-  margin-left: $space
+  margin: $space/2 auto $space
+  text-decoration: none
+  width: $grid-item-max-size
 
-  &:first-child
-    margin-left: 0
+  @include bp(sm)
+    margin: $space/2
+    width: $grid-item-size
 
   &:hover
     border-color: $color-green
     color: $color-green
 
   &-image
+    background-repeat: no-repeat
+    background-position: center
     height: $grid-item-size
-    width: $grid-item-size
+    width: 100%
 
   &-name
+    align-items: center
+    display: flex
     font-family: $font-heading
+    font-size: 1.1rem
+    justify-content: center
+    min-height: 55px
+    padding: $space/4 $space/2
+
+    @include bp(sm)
+      font-size: 1.3rem

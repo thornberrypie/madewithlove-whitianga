@@ -5,13 +5,12 @@
 get_header();
 ?>
 
-<main class="mw-main">
-	<div class="mw-container">
+<main class="mwl-main">
+	<div class="mwl-container">
 			<?php
 			if ( have_posts() ) {
 				while ( have_posts() ) {
 					the_post();
-					echo MWL_get_image('intro_image', 'large');
 					get_template_part('views/homepage');
 				}
 			} else {

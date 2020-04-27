@@ -14,14 +14,14 @@ function MWL_featured_image($id) {
 }
 
 function MWL_hero_image($id) {
-  $img = MWL_get_image('intro_image');
+  $img = MWL_get_image('intro_image', 'large');
   $txt = get_field('intro_text');
 
   if(!$img && ! $txt) return '';
 
   $hero = '<div class="mwl-hero">';
   $hero .= $img ? $img : '';
-  $hero .= $txt ? '<div class="mwl-hero-text">'.$txt.'</div>': '';
+  $hero .= $txt ? '<h1 class="mwl-hero-overlay"><span class="mwl-hero-text">'.$txt.'</span></h1>': '';
   $hero .= '</div>';
 
   return $hero;

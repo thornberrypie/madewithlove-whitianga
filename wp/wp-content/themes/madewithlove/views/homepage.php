@@ -1,4 +1,4 @@
-<div class="mw-content">
+<div class="mwl-content">
   <?php if($post) echo MWL_hero_image($post->ID) ?>
-  <h2><?php the_content() ?></h2>
+  <div class="mwl-content-main"><?php the_content() ?></div>
 </div>

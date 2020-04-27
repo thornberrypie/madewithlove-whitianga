@@ -41,8 +41,8 @@ module.exports = {
                 loader: 'file-loader',
                 options: {
                     name: '[name].[ext]',
-                    publicPath: '../fonts/', //<--resolve the path in css files
-                    outputPath: './wp/wp-content/themes/madewithlove/src/fonts/', //<-- path to place font files
+                    publicPath: '../../fonts/', //<--resolve the path in css files
+                    outputPath: './wp/wp-content/themes/madewithlove/fonts/', //<-- path to place font files
                     context: 'css/vendors/'
                 }
             }

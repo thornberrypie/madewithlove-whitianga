@@ -1,5 +1,5 @@
 <?php
-function MWL_get_image($field, $size='thumbnail', $alt='') {
+function mwl_get_image($field, $size='thumbnail', $alt='') {
   $image = get_field($field);
   if(!$image) return '';
 
@@ -16,7 +16,7 @@ function MWL_get_image($field, $size='thumbnail', $alt='') {
   return '<img src="'.$image.'" alt="'.$alt.'">';
 }
 
-function MWL_get_image_url($field, $size='thumbnail') {
+function mwl_get_image_url($field, $size='thumbnail') {
   $image = get_field($field);
   if(!$image) return '';
 
@@ -32,7 +32,7 @@ function MWL_get_image_url($field, $size='thumbnail') {
   return $image;
 }
 
-function MWL_get_the_title() {
+function mwl_get_the_title() {
   $object = get_queried_object();
 
   if(isset($object->taxonomy)){

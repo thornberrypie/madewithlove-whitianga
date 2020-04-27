@@ -7,7 +7,7 @@
     <link rel="manifest" href="/site.webmanifest">
     <title>
         <?php
-          echo MWL_get_the_title().' | '.get_bloginfo();
+          echo mwl_get_the_title().' | '.get_bloginfo();
         ?>
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">

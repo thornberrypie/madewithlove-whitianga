@@ -8,10 +8,10 @@ get_header();
 			if ( have_posts() ) {
 				while ( have_posts() ) {
 					the_post();
-					get_template_part('views/content');
+					get_template_part('includes/content');
 				}
 			} else {
-				get_template_part('views/content', 'none' );
+				get_template_part('includes/content', 'none' );
 			} ?>
 	</div>
 </main>

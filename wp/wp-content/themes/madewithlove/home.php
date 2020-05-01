@@ -11,10 +11,10 @@ get_header();
 			if ( have_posts() ) {
 				while ( have_posts() ) {
 					the_post();
-					get_template_part('views/homepage');
+					get_template_part('includes/content-home');
 				}
 			} else {
-				get_template_part('views/content', 'none' );
+				get_template_part('includes/content', 'none' );
 			} ?>
 	</div>
 </main>

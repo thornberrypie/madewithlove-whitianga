@@ -18,7 +18,7 @@ register_nav_menus(
 // Theme functions
 function mwl_enqueue_files() {
   wp_enqueue_style( 'mwl-styles', get_template_directory_uri() . '/dist/css/theme.css');
-  ///wp_enqueue_script( 'mwl-scripts', get_template_directory_uri() . '/dist/js/theme.js', [], false, true);
+  wp_enqueue_script( 'mwl-scripts', get_template_directory_uri() . '/dist/js/theme.js', [], false, true);
 }
 
 /**

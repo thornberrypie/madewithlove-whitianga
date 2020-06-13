@@ -6,20 +6,6 @@ function mwl_content_image() {
     : '';
 }
 
-function mwl_featured_image($id) {
-  if(has_post_thumbnail($id)) {
-      $image_array = wp_get_attachment_image_src(
-        get_post_thumbnail_id( $id ),
-        'large'
-      );
-      $image = $image_array[0];
-  }else{
-      $image = MWL_DEFAULT_FEATURED_IMAGE;
-  }
-
-  return '<img src="'.$image.'">';
-}
-
 function mwl_hero_image($id) {
   $img = mwl_get_image('intro_image', 'large');
   $txt = get_field('intro_text');

@@ -1,7 +1,4 @@
 <?php
-// Theme Settings
-require_once 'includes/config.php';
-
 // Theme setup and functions
 require_once 'includes/theme.php';
 

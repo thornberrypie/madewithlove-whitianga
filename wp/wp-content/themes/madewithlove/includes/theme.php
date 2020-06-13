@@ -10,8 +10,8 @@ function mwl_post_thumbnails() {
 // Navigation
 register_nav_menus(
   array(
-    'mainmenu' => __( 'Main Menu', MWL_TEXT_DOMAIN ),
-    'footermenu' => __( 'Footer Menu', MWL_TEXT_DOMAIN )
+    'mainmenu' => __( 'Main Menu', 'madewithlove' ),
+    'footermenu' => __( 'Footer Menu', 'madewithlove' )
   )
 );
 

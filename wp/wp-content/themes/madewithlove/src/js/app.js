@@ -7,11 +7,11 @@ window.onload = function() {
   if(hiddenMailField) {
     var hiddenNameField = document.getElementById('field_supplier_name')
     
-    // Get the supplier email from the title's data-supplier-id attribute
+    // Get the supplier email from the title's data-supplier-email attribute
     var supplierTitle = document.getElementById('mwl-supplier-title')
 
     if(supplierTitle) {
-      var supplierEmail = supplierTitle.getAttribute('data-supplier-id')
+      var supplierEmail = supplierTitle.getAttribute('data-supplier-email')
       var supplierName = supplierTitle.getAttribute('data-supplier-title')
 
       // Add the supplier email and name to the hidden form fields

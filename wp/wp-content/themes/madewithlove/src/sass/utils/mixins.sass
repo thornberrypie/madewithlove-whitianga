@@ -17,5 +17,19 @@
   @else 
     @warn "Breakpoint mixin supports:  xs, sm, md, lg and xl"
 
+@mixin button($bg: $color-button, $color: $color-white)
+  -webkit-appearance: none
+  background-color: $bg
+  border-radius: em(5)
+  border: 0
+  color: $color
+  cursor: pointer
+  display: inline-block
+  font-weight: bold
+  line-height: 1.2
+  padding: em(8) em(12) em(10) em(8)
+  text-align: center
+  text-decoration: none
+
 @mixin transition($property: all, $speed: 0.3s, $function: ease)
   transition: $property $speed $function

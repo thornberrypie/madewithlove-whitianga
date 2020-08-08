@@ -1,8 +1,11 @@
 .mwl-hero
   position: relative
 
+  @include bp(md)
+    padding-top: $space
+
   &-overlay
-    bottom: 7px
+    bottom: $space
     color: $color-black
     font-family: $font-book
     font-size: 0.8rem
@@ -13,10 +16,10 @@
     width: 100%
 
     @include bp(xs)
-      font-size: 1.3rem
+      font-size: 1.2rem
 
     @include bp(md)
-      font-size: 1.9rem
+      font-size: 1.8rem
 
     @include bp(lg)
       bottom: 10px

@@ -7,12 +7,12 @@ get_header();
 			if ( have_posts() ) {
 				while ( have_posts() ) {
 					the_post();
-					get_template_part('includes/content-supplier');
+					get_template_part('includes/content');
 				}
 			} else {
 				get_template_part('includes/content', 'none' );
 			} ?>
-			<a href="/" class="mwl-backlink">&lt; Back</a>
+      <button onclick="history.back()" class="mwl-backlink">&lt; Back</button>
 	</div>
 </main>
 

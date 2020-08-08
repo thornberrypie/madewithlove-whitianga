@@ -5,10 +5,10 @@
     margin: 0 auto
     max-width: 86em
 
-    @include bp(sm)
+    @include bp(md)
       display: flex
       flex-wrap: wrap
-      justify-content: space-between
+      justify-content: center
 
   &-title
     font-family: $font-heading
@@ -18,20 +18,21 @@
     text-transform: uppercase
     width: 100%
 
-    @include bp(sm)
+    @include bp(md)
       font-size: 1.9rem
-      padding: $space 10px 10px
-      text-align: left
+      padding: $space 10px
 
 .mwl-supplier
   @include transition
   border: 1px solid $color-grey
+  border-radius: 4px
   color: $color-black
+  display: block
   margin: $space/2 auto $space
   text-decoration: none
   width: $grid-item-max-size
 
-  @include bp(sm)
+  @include bp(md)
     margin: $space/2
     width: $grid-item-size
 

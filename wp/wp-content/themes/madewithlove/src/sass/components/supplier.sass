@@ -1,33 +1,21 @@
 .mwl-content-supplier
-  padding-bottom: 0
-
-  @include bp(sm)
-    display: flex
-
-
   .mwl-content-image
-    margin-bottom: $space/2
+    margin-bottom: $space
 
-    @include bp(sm)
+    @include bp(md)
       margin: 0 $space 0 0
-      max-width: 50%
 
   .mwl-content-main
     margin-top: $space/2
     width: 100% 
 
-    @include bp(sm)
+    @include bp(md)
       margin-top: $space/4
       text-align: left
 
-    @include bp(md)
+    @include bp(lg)
       margin-top: $space/2
 
   .mwl-content-title
     font-family: $font-heading
-    margin-bottom: $space/2
-
-  // Overwrite success message from Formidable Forms
-  .frm_style_formidable-style.with_frm_style .frm_message p
-    font-size: 18px
-    font-weight: normal
+    margin: $space 0 $space/2

@@ -1,0 +1,21 @@
+.gallery
+  &-icon
+    margin: 0 $space
+
+  img.attachment-thumbnail
+    @include transition
+    border-color: $color-grey !important
+    border-radius: 4px
+
+  a:hover,
+  a:focus
+    outline: none
+    
+    img.attachment-thumbnail
+      border-color: $color-green !important
+
+  &-caption
+    margin-bottom: em(12)
+    max-width: 92%
+    padding-left: 4%
+  

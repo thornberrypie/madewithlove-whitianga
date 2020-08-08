@@ -20,5 +20,8 @@
       <a href="/">
         <img src="/wp-content/themes/madewithlove/images/made-with-love-logo-large.jpg" alt="made with love gifts wellness eco friendly flowers" />
       </a>
+    <?php if(!is_home()) { ?>
+      <button onclick="history.back()" class="mwl-backlink">&larr;</button>
+    <?php } ?>
     </header>
   </div>

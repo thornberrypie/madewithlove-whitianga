@@ -20,15 +20,15 @@ if ($supplierEmail && strpos($supplierEmail, 'madewithlove.whitianga') === false
       data-supplier-email="<?php echo $supplierEmail ?>"
       data-supplier-slug="<?php echo $post_slug ?>"
       data-supplier-title="<?php the_title() ?>"
-      id="mwl-supplier-title"
+      id="mwl-supplier-title"><?php the_title() ?>
     </h1>
     <?php the_content() ?>
-    <?php
-    // Only show supplier form if email is set in CMS
-    if($supplierEmail) { ?>
-      <div class="mwl-form">
-        <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 1, 'title' => false ) ) ?>
-      </div>
-    <?php } ?>
   </div>
 </div>
+<?php
+// Only show supplier form if email is set in CMS
+if($supplierEmail) { ?>
+  <div class="mwl-form">
+    <?php echo FrmFormsController::get_form_shortcode( array( 'id' => 1, 'title' => false ) ) ?>
+  </div>
+<?php } ?>

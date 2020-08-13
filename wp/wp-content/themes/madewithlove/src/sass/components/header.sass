@@ -2,4 +2,8 @@
   text-align: center
 
   img
-    max-width: 80%
+    @include bp(sm)
+      max-width: 90%
+
+    @include bp(md)
+      max-width: 80%

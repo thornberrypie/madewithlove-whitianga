@@ -1,6 +1,6 @@
 .mwl-form
   padding: $space
-  
+
   // Overwrite success message from Formidable Forms
 .frm_style_formidable-style.with_frm_style
   .frm_message p
@@ -15,6 +15,12 @@
   input[type="submit"]:focus,
   .frm_submit input[type="button"]:focus,
   .frm_submit button:focus
-    background-color: $color-green
-    border-color: $color-white
-    color: $color-white
+    background-color: $color-green !important
+    border-color: $color-grey
+    color: $color-white !important
+    outline: none
+
+  .frm_error
+    padding-top: $space/2
+
+  
